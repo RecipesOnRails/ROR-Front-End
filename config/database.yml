@@ -25,4 +25,4 @@ production:
   database: ROR-Front-End_production
   username: ROR-Front-End
   password: <%= ENV['ROR-FRONT-END_DATABASE_PASSWORD'] %>
-
+  
