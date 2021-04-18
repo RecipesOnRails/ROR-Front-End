@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <% unless @skip_navbar %>
+    <%= render partial: "/shared/render_navbar" %>
+    <% end %>
     <title>RORFrontEnd</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>

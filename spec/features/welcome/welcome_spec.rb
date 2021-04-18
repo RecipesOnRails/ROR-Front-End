@@ -13,10 +13,11 @@ RSpec.describe 'Welcome Page' do
   end
 
   xit 'sends the user to log in with kroger when that button is clicked' do
+    @user = create(:user)
     visit "/"
 
-    # click_link("Login With Kroger")
     # stub oauth results first
+    click_link("Login With Kroger")
     # expect(current_path).to eq("/auth/kroger/callback")
   end
 end

@@ -1,0 +1,13 @@
+<ul id="navbar">
+  <% unless @skip_dashboard %>
+    <%= render partial: "/shared/render_dashboard" %>
+  <% end %>
+
+  <% unless @skip_shopping_list  %>
+    <%= render partial: "/shared/render_shopping_list" %>
+  <% end %>
+
+  <% unless @skip_search_recipes %>
+    <%= render partial: "/shared/render_search_recipes" %>
+  <% end %>
+<li> <%=link_to 'Log Out',logout_path, method: :delete, value: "logout" %></li>
