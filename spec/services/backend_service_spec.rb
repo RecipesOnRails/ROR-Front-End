@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe BackendApiService, type: :class do
+describe BackendService, type: :class do
   describe 'class methods' do
     it 'recipe_data' do
       test = BackendService.recipe_data(123)
