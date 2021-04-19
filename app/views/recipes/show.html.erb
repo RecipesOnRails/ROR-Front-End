@@ -1,14 +1,15 @@
 <%= @recipe[:attributes][:name] %>
 <%= @recipe[:attributes][:recipe_info] %>
+<%= image_tag(@recipe[:attributes][:image]) %>
 
 <% @recipe[:attributes][:ingredients].each do |ingredient| %>
-  <p>><%=ingredient.name%>> <%=ingredient.amount  %></p>
+  <p><%=ingredient.name%>> <%=ingredient.amount  %></p>
 <% end %>
 
 <% @recipe[:attributes][:instructions].each do |instruction| %>
-  <p>><%=instruction.step%>> <%=instruction.instruction  %></p>
+  <p><%=instruction.step%>> <%=instruction.instruction  %></p>
 <% end %>
 
 <% @recipe[:attributes][:nutrients].each do |nutrient| %>
-  <p>><%=nutrient.name%>> <%=nutrient.amount  %></p>
+  <p><%=nutrient.name%>> <%=nutrient.amount  %></p>
 <% end %>
