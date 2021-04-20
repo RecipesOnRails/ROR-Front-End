@@ -1,12 +1,16 @@
-<h1>Welcome to Recipes on Rails <%= current_user.uid %>!</h1>
+<h1 class="dashboard-header">Welcome to Recipes on Rails <%= current_user.uid %>!</h1>
 
-<%= button_to "Past Recipes", recipes_past_path, method: :get %>
-
+<div class="container-left">
 <%= form_with url: dashboard_path, local: true do |f| %>
   <%= f.label "Friend's Email:" %>
   <%= f.text_field :email %>
   <%= f.submit "Email Meal Plan" %>
 <% end %>
+</div>
+
+<div class="container-right">
+<%= button_to "Past Recipes", recipes_past_path, method: :get %>
+</div>
 
 <div class="meal-plan-week">
   <% (Date.today.beginning_of_week...Date.today.beginning_of_week+7).to_a.each do |day| %>
