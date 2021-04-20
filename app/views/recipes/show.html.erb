@@ -1,15 +1,40 @@
-<%= @recipe[:attributes][:name] %>
-<%= @recipe[:attributes][:recipe_info] %>
-<%= image_tag(@recipe[:attributes][:image]) %>
+<div class="container-fluid">
 
-<% @recipe[:attributes][:ingredients].each do |ingredient| %>
-  <p><%=ingredient.name%>> <%=ingredient.amount  %></p>
-<% end %>
+  <div class="media">
+    <img class="mr-3" src="https://spoonacular.com/recipeImages/123-556x370.jpg" alt="Generic placeholder image">
+    <div class="media-body">
+      <h3 class="mt-0"><%= @recipe[:attributes][:name] %></h3>
+      <%= @recipe[:attributes][:recipe_info] %>
+    </div>
+  </div><br><br>
 
-<% @recipe[:attributes][:instructions].each do |instruction| %>
-  <p><%=instruction.step%>> <%=instruction.instruction  %></p>
-<% end %>
+  <div class="row">
+    <div class="col-sm">
+      <h4>Ingredients</h4>
+      <% @recipe[:attributes][:ingredients].each do |ingredient| %>
+      <p> <%=ingredient[:amount] %> <%=ingredient[:name] %></p>
+      <% end %><br>
+    </div>
+    <div class="col-lg">
+      <h4>Instructions</h4>
+      <ul>
+        <% @recipe[:attributes][:instructions].each do |instruction| %>
+        <li><%=instruction[:instruction] %></li>
+        <% end %>
+      </ul><br>
+    </div>
 
-<% @recipe[:attributes][:nutrients].each do |nutrient| %>
-  <p><%=nutrient.name%>> <%=nutrient.amount  %></p>
-<% end %>
+  </div>
+  <h3>Nutrition</h3><br>
+  <div class="card-columns">
+    <% @recipe[:attributes][:nutrients].each do |nutrient| %>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><%=nutrient[:name]%></h5>
+        <p class="card-text"><%=nutrient[:amount] %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+</div>

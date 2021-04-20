@@ -1,7 +1,6 @@
 class BackendService
   def self.recipe_data(id)
     response = conn.get("/recipes/#{id}")
-    require "pry"; binding.pry
     JSON.parse(response.body, symbolize_names: true)
   end
 

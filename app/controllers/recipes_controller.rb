@@ -1,6 +1,9 @@
 class RecipesController < ApplicationController
   def show
-    @recipe = BackendServiceFacade.get_recipe(recipe_id)
+    food = File.read('spec/fixtures/recipe_view.json')
+    food = JSON.parse(food, symbolize_names: true)[:data]
+    # @recipe = BackendServiceFacade.get_recipe(recipe_id)
+    @recipe = food
   end
 
   private

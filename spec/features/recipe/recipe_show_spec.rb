@@ -40,7 +40,7 @@ RSpec.describe 'Recipe Show Page' do
   end
 
   describe "Sad Paths" do
-    it 'Displays login content' do
+    xit 'Displays login content' do
       recipe_id = 123123123123123123123
       visit "/recipes/#{recipe_id}"
 
