@@ -29,5 +29,7 @@ describe 'As a user' do
       save_and_open_page
       expect(page).to have_button("Past Recipes")
     end
+
+
   end
 end

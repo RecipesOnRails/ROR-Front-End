@@ -2,7 +2,9 @@
 <html>
   <head>
     <% unless @skip_navbar %>
-    <%= render partial: "/shared/render_navbar" %>
+    <nav class="navbar">
+      <%= render partial: "/shared/render_navbar" %>
+    </nav>
     <% end %>
     <title>RORFrontEnd</title>
     <%= csrf_meta_tags %>
@@ -12,7 +14,7 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
+  <body class="body-color">
     <%flash.each do |name, msg|  %>
       <%= content_tag :div, msg, class: name %>
     <% end %>

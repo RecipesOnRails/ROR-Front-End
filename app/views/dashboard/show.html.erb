@@ -1,20 +1,39 @@
-<h1>Welcome to Recipes on Rails <%= current_user.uid %>!</h1>
+<body>
 
-<%= button_to "Past Recipes", recipes_past_path, method: :get %>
+<section class="section1">
 
-<%= form_with url: recipes_path, local: true do |f| %>
-  <%= f.label "Friend's Email:" %>
-  <%= f.text_field :email %>
-  <%= f.submit "Email Meal Plan" %>
+
+<h1 class="dashboard-header">Welcome to Recipes on Rails <%= current_user.uid %>!</h1>
+
+<section class= "dashboard-btns">
+  <%= button_to "Past Recipes", recipes_past_path, method: :get %>
+
+  <%= form_with url: recipes_path, local: true do |f| %>
+    <%= f.label "Friend's Email:" %>
+    <%= f.text_field :email %>
+    <%= f.submit "Email Meal Plan" %>
+  <% end %>
+</section>
+
+<div class="container">
+<div class="row">
+
+<% (Date.today.beginning_of_week...Date.today.beginning_of_week+7).to_a.each do |day| %>
+
+    <div class="card">
+    <div class="card-body">
+      <p>
+        <%= day.strftime("%A") %>
+        <section class="day-#{day}">
+          <%= button_to "Add Meal", recipes_path, method: :get %>
+        </section>
+      </p>
+    </div>
+    </div>
+
 <% end %>
 
-<div class="meal-plan-week">
-  <% (Date.today.beginning_of_week...Date.today.beginning_of_week+7).to_a.each do |day| %>
-    <p>
-      <%= day.strftime("%A") %>
-      <section class="day-#{day}">
-        <%= button_to "Add Meal", recipes_path, method: :get %>
-      </section>
-    </p>
-  <% end %>
 </div>
+</div>
+</section>
+</body>
