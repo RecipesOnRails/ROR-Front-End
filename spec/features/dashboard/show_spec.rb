@@ -29,5 +29,13 @@ describe 'As a user' do
       save_and_open_page
       expect(page).to have_button("Past Recipes")
     end
+
+    it 'sends out email' do
+      fill_in :email, with: "bobgu@gmail.com"
+      click_button "Email Meal Plan"
+
+      expect(ActionMailer::Base.deliveries.count).to eq(1)
+      email = ActionMailer::Base.deliveries.last
+    end
   end
 end
