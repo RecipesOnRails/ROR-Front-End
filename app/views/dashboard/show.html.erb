@@ -2,7 +2,7 @@
 
 <%= button_to "Past Recipes", recipes_past_path, method: :get %>
 
-<%= form_with url: recipes_path, local: true do |f| %>
+<%= form_with url: dashboard_path, local: true do |f| %>
   <%= f.label "Friend's Email:" %>
   <%= f.text_field :email %>
   <%= f.submit "Email Meal Plan" %>
@@ -10,11 +10,17 @@
 
 <div class="meal-plan-week">
   <% (Date.today.beginning_of_week...Date.today.beginning_of_week+7).to_a.each do |day| %>
-    <p>
+  <p>
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title name">
       <%= day.strftime("%A") %>
-      <section class="day-#{day}">
-        <%= button_to "Add Meal", recipes_path, method: :get %>
-      </section>
+        <section class="day-#{day}">
+          <%= button_to "Add Meal", recipes_path, method: :get %>
+        </section>
+      </div>
+    </div>
+  </div>
     </p>
   <% end %>
 </div>

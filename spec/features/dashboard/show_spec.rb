@@ -21,13 +21,22 @@ describe 'As a user' do
     end
 
     it "shows a button to view past recipes" do
-      save_and_open_page
       expect(page).to have_button("Past Recipes")
     end
 
     it "shows a button to email meal plan" do
-      save_and_open_page
       expect(page).to have_button("Past Recipes")
+    end
+
+    it 'sends out email' do
+      fill_in :email, with: "bobgu@gmail.com"
+      click_button "Email Meal Plan"
+
+      expect(ActionMailer::Base.deliveries.count).to eq(1)
+      email = ActionMailer::Base.deliveries.last
+      expect(current_path).to eq(dashboard_path)
+      expect(page).to have_content("Your meal plan has been sent.")
+
     end
   end
 end
