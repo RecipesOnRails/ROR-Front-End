@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spoonacular.com/recipes/complexSearch?apiKey=296c69ea4ec3407d848370782126a86d&includeIngredients=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Apr 2021 21:59:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '449'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8f046341bff017ffabd7401d8c1b3fb11619042377; expires=Fri, 21-May-21
+        21:59:37 GMT; path=/; domain=.spoonacular.com; HttpOnly; SameSite=Lax
+      Allow-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization, UserId, Hash, Name, Password, Accept, Accept-Language, Content-Language,
+        Content-Type, Cache-Control, Origin, X-Requested-With
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS, DELETE, PUT
+      Allow-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS, DELETE, PUT
+      X-Api-Quota-Request:
+      - '1.1'
+      X-Api-Quota-Used:
+      - '123.21999999999984'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - '09980b35ae0000f784c6b34000000001'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=qpT9ZhMiOh8LiqC6k24lfJlJJrJDcqI5m8uer7pz%2FhekO01nTMEqI3lP3Ij8NMvtt8d4UNZn6acZHzBpUuneLYpvrGdo7VkiMlMr2Rauud2b%2BxEs"}],"max_age":604800,"group":"cf-nel"}'
+      Nel:
+      - '{"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6439e1691941f784-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"id":716426,"title":"Cauliflower, Brown Rice, and Vegetable
+        Fried Rice","image":"https://spoonacular.com/recipeImages/716426-312x231.jpg","imageType":"jpg"},{"id":715594,"title":"Homemade
+        Garlic and Basil French Fries","image":"https://spoonacular.com/recipeImages/715594-312x231.jpg","imageType":"jpg"},{"id":715497,"title":"Berry
+        Banana Breakfast Smoothie","image":"https://spoonacular.com/recipeImages/715497-312x231.jpg","imageType":"jpg"},{"id":644387,"title":"Garlicky
+        Kale","image":"https://spoonacular.com/recipeImages/644387-312x231.jpg","imageType":"jpg"},{"id":715392,"title":"Chicken
+        Tortilla Soup (Slow Cooker)","image":"https://spoonacular.com/recipeImages/715392-312x231.jpg","imageType":"jpg"},{"id":716268,"title":"African
+        Chicken Peanut Stew","image":"https://spoonacular.com/recipeImages/716268-312x231.jpg","imageType":"jpg"},{"id":716381,"title":"Nigerian
+        Snail Stew","image":"https://spoonacular.com/recipeImages/716381-312x231.jpg","imageType":"jpg"},{"id":782601,"title":"Red
+        Kidney Bean Jambalaya","image":"https://spoonacular.com/recipeImages/782601-312x231.jpg","imageType":"jpg"},{"id":794349,"title":"Broccoli
+        and Chickpea Rice Salad","image":"https://spoonacular.com/recipeImages/794349-312x231.jpg","imageType":"jpg"},{"id":715446,"title":"Slow
+        Cooker Beef Stew","image":"https://spoonacular.com/recipeImages/715446-312x231.jpg","imageType":"jpg"}],"offset":0,"number":10,"totalResults":5076}'
+  recorded_at: Wed, 21 Apr 2021 21:59:37 GMT
+recorded_with: VCR 6.0.0

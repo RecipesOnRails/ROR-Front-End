@@ -6,17 +6,34 @@ RSpec.describe "Recipe Search Page" do
       before :each do
         @user = create(:user)
         allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
-        visit '/recipes'
       end
 
       describe 'when I visit the recipes search page' do
         it 'expects page to visit recipes path' do
-          expect(current_path).to eq(recipes_path)
+          VCR.use_cassette('recipes_default') do
+            visit '/recipes'
+            expect(current_path).to eq(recipes_path)
+          end
         end
 
         it "has a search bar with a submit button" do
-          expect(page).to have_field(:search)
-          expect(page).to have_button(:submit) 
+          VCR.use_cassette('recipes_default') do
+            visit '/recipes'
+            expect(page).to have_field(:search)
+            expect(page).to have_button(:submit)
+          end
+        end
+      end
+
+      describe "sad path and error" do
+        it "500 error" do
+          ingredient = "chicken"
+          stub_request(:get, "https://api.spoonacular.com/recipes/complexSearch?apiKey=296c69ea4ec3407d848370782126a86d&includeIngredients=#{ingredient}").
+            to_return(status: 500, body: "", headers: {})
+
+          data = BackendService.recipe_search_data(ingredient)
+          save_and_open_page
+          expect(data).to eq({error: true})
         end
       end
     end
