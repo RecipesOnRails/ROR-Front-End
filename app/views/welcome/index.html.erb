@@ -1,7 +1,26 @@
-<h1>Welcome To Recipes On Rails</h1>
+<div class="container-float">
+  <br><br><br><br>
+  <h1 class="text-center">Welcome To Recipes On Rails</h1> <br>
 
-<p>This app allows you to create meal plans based on meals that share common ingredients with one another. Share meal plans and order from store through the app.</p>
+  <div class="row align-items-center">
+    <div class="col-sm">
+    </div>
+    <div class="col-lg">
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">This app allows you to create meal plans based on meals that share common ingredients with one another. Share meal plans and order from store through the app.</p>
+      </blockquote>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div><br>
 
-<%= link_to "Login With Kroger", "https://api.kroger.com/v1/connect/oauth2/authorize?scope=profile.compact&client_id=#{ENV['kroger_client_id']}&redirect_uri=http://localhost:3000/auth/kroger/callback&response_type=code" %>
-
-<%= button_to "Create an Account", 'https://www.kroger.com/account/create?redirectUrl=/' %>
+  <div class="row justify-content-md-center">
+    <div class="col-5">
+    </div>
+    <div class="col-md-auto">
+      <%= link_to "Login With Kroger", "https://api.kroger.com/v1/connect/oauth2/authorize?scope=profile.compact&client_id=#{ENV['kroger_client_id']}&redirect_uri=http://localhost:3000/auth/kroger/callback&response_type=code", class: "badge badge-success"%>
+    </div>
+    <div class="col-5">
+    </div>
+  </div><br>
+</div>
