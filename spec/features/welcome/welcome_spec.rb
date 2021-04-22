@@ -11,13 +11,4 @@ RSpec.describe 'Welcome Page' do
     expect(page).to have_link("Login With Kroger")
     expect(page).to have_button("Create an Account")
   end
-
-  xit 'sends the user to log in with kroger when that button is clicked' do
-    @user = create(:user)
-    visit "/"
-
-    # stub oauth results first
-    click_link("Login With Kroger")
-    # expect(current_path).to eq("/auth/kroger/callback")
-  end
 end
