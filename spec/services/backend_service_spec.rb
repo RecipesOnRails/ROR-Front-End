@@ -10,7 +10,6 @@ describe BackendService, type: :class do
         expect(test).to have_key(:summary)
         expect(test).to have_key(:image)
         expect(test).to have_key(:instructions)
-
       end
     end
   end

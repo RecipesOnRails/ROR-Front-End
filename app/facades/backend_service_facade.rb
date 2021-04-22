@@ -1,9 +1,10 @@
 class BackendServiceFacade
   def self.get_recipe(id)
-    BackendService.recipe_data(id)[:data]
+    data = BackendService.recipe_data(id)
+    RecipePoro.new(data)
   end
 
   def self.get_recipes_search(ingredient1)
-    BackendService.recipe_search_data(ingredient1)[:results]
+    data = BackendService.recipe_search_data(ingredient1)
   end
 end
