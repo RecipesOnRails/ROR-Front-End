@@ -1,7 +1,7 @@
 class RecipePoro
   attr_reader :id,
               :title,
-              :recipe_info,
+              :summary,
               :instructions,
               :ingredients,
               :nutrients
