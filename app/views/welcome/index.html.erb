@@ -18,7 +18,7 @@
     <div class="col-5">
     </div>
     <div class="col-md-auto">
-      <%= link_to "Login With Kroger", "https://api.kroger.com/v1/connect/oauth2/authorize?scope=profile.compact&client_id=#{ENV['kroger_client_id']}&redirect_uri=http://localhost:3000/auth/kroger/callback&response_type=code", class: "badge badge-success"%>
+      <%= link_to "Login With Kroger", "https://api.kroger.com/v1/connect/oauth2/authorize?scope=profile.compact&client_id=#{ENV['kroger_client_id']}&redirect_uri=#{ENV['kroger_redirect_uri']}&response_type=code", class: "badge badge-success"%>
     </div>
     <div class="col-5">
     </div>

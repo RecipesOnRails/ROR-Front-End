@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   def show
-    @recipe = BackendServiceFacade.get_recipe(params[:id])
+    @recipe = BackendServiceFacade.get_recipe(params["id"])
   end
 
   def index
