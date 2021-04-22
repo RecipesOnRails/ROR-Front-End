@@ -13,3 +13,77 @@
  */
 
 @import "bootstrap";
+
+.card {
+  float: left;
+  color: darkturquoise;
+  background-color: black;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.card-title{
+  padding: 10px;
+  padding-bottom: 75px;
+  flex: 0 0 100%;
+}
+
+.body-color {
+  background-color: lightgreen;
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Fantasy", "Copperplate";
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  overflow: hidden;
+}
+
+.container-left {
+  float: left;
+  margin-right: 100px;
+}
+
+.container-right {
+  float: center;
+  margin-left: 100px;
+}
+
+.dashboard-btns {
+  float: center;
+}
+
+.nav-item {
+  margin: 15px;
+}
+
+.btn {
+  color: white;
+}
+
+.btn-outline-primary{
+  background-color: red;
+}
+
+.btn-outline-secondary{
+  background-color: black;
+}
+
+.footer-trademark {
+  float: right;
+  font-family: "Fantasy", "Copperplate";
+  font-size: 50px;
+}

@@ -1,0 +1,18 @@
+<% if @recipes %>
+  <% if @recipes == {error: true} %>
+    Sorry, there was a server error while processing your request!
+    <% else %>
+      <% @recipes.each do |recipe| %>
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title name">
+            <img src="<%= recipe[:image] %>"height="125px" width="140px" style="margin:10px>"<br><br>
+            <%= recipe[:title] %><br>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    <% end %>
+  <% else %>
+  <br> Oh no! No search results found.
+<% end %>

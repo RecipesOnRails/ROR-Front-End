@@ -1,14 +1,10 @@
 class RecipesController < ApplicationController
   def show
-    food = File.read('spec/fixtures/recipe_view.json')
-    food = JSON.parse(food, symbolize_names: true)[:data]
-    # @recipe = BackendServiceFacade.get_recipe(recipe_id)
-    @recipe = food
+    @recipe = BackendServiceFacade.get_recipe(params["id"])
   end
 
-  private
-
-  def recipe_id
-    params[:id]
+  def index
+    @skip_search_recipes = true
+    @recipes = BackendServiceFacade.get_recipes_search(params[:ingredient1])
   end
 end
