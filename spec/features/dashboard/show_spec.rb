@@ -1,6 +1,17 @@
 require 'rails_helper'
 
 describe 'As a user' do
+  describe "As an unauthenticated user" do
+    describe "when I visit the dashboard page it" do
+      it "redirects me to the login page with a flash message" do
+        visit dashboard_path
+
+        expect(current_path).to eq(root_path)
+        expect(page).to have_content("You must be logged in to view this page")
+      end
+    end
+  end
+  
   describe 'once I\'ve logged in' do
     before :each do
       @user = create(:user)
