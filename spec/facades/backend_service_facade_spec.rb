@@ -14,10 +14,10 @@ RSpec.describe "BackendServiceFacade" do
         id = 123
         a = BackendServiceFacade.get_recipe(id)
         expect(a).to be_an(RecipePoro)
-        expect(a.id).to eq(123)
+        expect(a.id).to be_an(String)
         expect(a.ingredients).to be_an(Array)
-        expect(a.instructions).to be_an(String)
-        expect(a.nutrients).to be_an(String)
+        expect(a.instructions).to be_an(Array)
+        expect(a.nutrients).to be_an(Array)
         expect(a.summary).to be_an(String)
         expect(a.title).to be_an(String)
       end
@@ -25,6 +25,6 @@ RSpec.describe "BackendServiceFacade" do
   end
 
   describe ".get_recipes_search" do
-    
+
   end
 end

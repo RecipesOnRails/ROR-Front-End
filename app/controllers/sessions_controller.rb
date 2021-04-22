@@ -1,6 +1,8 @@
 require 'base64'
 
 class SessionsController < ApplicationController
+  skip_before_action :require_login
+  
   def create
     client_id = ENV['kroger_client_id']
     client_secret = ENV['kroger_client_secret']
