@@ -12,7 +12,7 @@ class BackendService
 
   def self.recipe_search_data(ingredient)
     #conn.get("/recipes?#{ingredient}")
-    response = conn.get("/recipes/complexSearch?apiKey=296c69ea4ec3407d848370782126a86d&includeIngredients=#{ingredient}")
+    response = conn.get("/api/v1/recipes/ingredients=#{ingredient}")
     if response.status == 200
       json_parse(response)
     else
