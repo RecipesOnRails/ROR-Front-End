@@ -9,6 +9,5 @@ RSpec.describe 'Welcome Page' do
     expect(page).to have_content("Welcome To Recipes On Rails")
     expect(page).to have_content(description)
     expect(page).to have_link("Login With Kroger")
-    expect(page).to have_button("Create an Account")
   end
 end
