@@ -6,5 +6,8 @@ class BackendServiceFacade
 
   def self.get_recipes_search(ingredient1)
     data = BackendService.recipe_search_data(ingredient1)
+    result = data[:data].map do |ingredient|
+      ResultsPoro.new(ingredient)
+    end
   end
 end
