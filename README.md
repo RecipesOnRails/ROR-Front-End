@@ -42,14 +42,23 @@ https://secure-gorge-18886.herokuapp.com/ is where it lives on production level.
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+
 ## Authors
-* **Megan Gonzales** -
-* **Jacob Arellano** -
-* **Arika Blenker** -
-* **Harrison Blake** -
-* **Hope McGee** -
-* **Trevor Robinson** --
-* **Jeremiah Michlitsch** --
+* **Megan Gonzales** -- [GitHub](https://github.com/MGonzales26) |
+  [LinkedIn](https://www.linkedin.com/in/megan-e-gonzales/)
+* **Jacob Arellano** -- [GitHub](https://github.com/jakejakearell) |
+  [LinkedIn](https://www.linkedin.com/in/jacob-arellano-ab2890207/)
+* **Arika Blenker** -- [GitHub](https://github.com/arikalea) |
+  [LinkedIn](https://www.linkedin.com/in/arika-blenker/)
+* **Harrison Blake** -- [GitHub](https://github.com/harrison-blake) |
+  [LinkedIn](https://www.linkedin.com/in/harrison-blake-802094200/)
+* **Hope McGee** -- [GitHub](https://github.com/hopesgit) |
+  [LinkedIn](https://www.linkedin.com/in/hope-mcgee/)
+* **Trevor Robinson** -- [GitHub](https://github.com/Trevor-Robinson) |
+  [LinkedIn](https://www.linkedin.com/in/trevor-robinson-0bb251207/)
+* **Jeremiah Michlitsch** -- [GitHub](https://github.com/jmichlitsch) |
+  [LinkedIn](https://www.linkedin.com/in/jeremiah-michlitsch-49048a206/)
+  
 See also the list of [contributors](https://github.com/RecipesOnRails/ROR-Front-End/graphs/contributors)
 ## License
 ## Acknowledgments
