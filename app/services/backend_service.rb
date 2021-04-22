@@ -1,7 +1,7 @@
 class BackendService
   def self.recipe_data(id)
     #response = conn.get("/recipes/#{id}")
-    response = conn.get("/recipes/#{id}")
+    response = conn.get("/recipes/#{id}/information?apiKey=296c69ea4ec3407d848370782126a86d")
     if response.status == 200
       json_parse(response)
     else
