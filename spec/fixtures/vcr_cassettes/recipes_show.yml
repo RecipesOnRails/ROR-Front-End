@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.spoonacular.com/recipes/123/information?apiKey=296c69ea4ec3407d848370782126a86d
+    uri: https://nameless-plains-48795.herokuapp.com/api/v1/recipes/123
     body:
       encoding: US-ASCII
       string: ''
@@ -18,96 +18,29 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Server:
+      - Cowboy
       Date:
-      - Thu, 22 Apr 2021 00:43:08 GMT
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '2106'
+      - Thu, 22 Apr 2021 20:00:52 GMT
       Connection:
       - keep-alive
-      Set-Cookie:
-      - __cfduid=d9deb66eab1c02de1c59c5a4843b7431a1619052188; expires=Sat, 22-May-21
-        00:43:08 GMT; path=/; domain=.spoonacular.com; HttpOnly; SameSite=Lax
-      Allow-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Authorization, UserId, Hash, Name, Password, Accept, Accept-Language, Content-Language,
-        Content-Type, Cache-Control, Origin, X-Requested-With
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, OPTIONS, DELETE, PUT
-      Allow-Control-Allow-Methods:
-      - GET, HEAD, POST, OPTIONS, DELETE, PUT
-      X-Api-Quota-Request:
-      - '1.0'
-      X-Api-Quota-Used:
-      - '81.31999999999995'
-      Cf-Cache-Status:
-      - DYNAMIC
-      Cf-Request-Id:
-      - '0998a0ea690000c7cda9873000000001'
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Report-To:
-      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=9hexs0R%2Biw727PkDqocKsmDQbH8mzt04X8xVvIG0jsA0i496apD8%2FQxzbm4GMKUX4MsndOWNC33boVLRyzzmQKAGYoRslkB1kw7jv3vkWWkZpKCo"}]}'
-      Nel:
-      - '{"max_age":604800,"report_to":"cf-nel"}'
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 643ad0f079e0c7cd-DEN
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a22050e067434e1585dc9b86d12b32ba"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 05daf7ef-da6d-4dea-877e-d730789adef4
+      X-Runtime:
+      - '0.327261'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: ASCII-8BIT
-      string: '{"vegetarian":false,"vegan":false,"glutenFree":true,"dairyFree":false,"veryHealthy":false,"cheap":false,"veryPopular":false,"sustainable":false,"weightWatcherSmartPoints":2,"gaps":"no","lowFodmap":false,"aggregateLikes":7,"spoonacularScore":57.0,"healthScore":12.0,"pricePerServing":164.56,"extendedIngredients":[{"id":15001,"aisle":"Seafood","image":"fresh-anchovies.jpg","consistency":"solid","name":"anchovy","nameClean":"anchovies","original":"1
-        anchovy, chopped","originalString":"1 anchovy, chopped","originalName":"anchovy,
-        chopped","amount":1.0,"unit":"","meta":["chopped"],"metaInformation":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"","unitLong":""},"metric":{"amount":1.0,"unitShort":"","unitLong":""}}},{"id":9037,"aisle":"Produce","image":"avocado.jpg","consistency":"solid","name":"avocado","nameClean":"hass
-        avocado","original":"1/2 ripe avocado","originalString":"1/2 ripe avocado","originalName":"ripe
-        avocado","amount":0.5,"unit":"","meta":["ripe"],"metaInformation":["ripe"],"measures":{"us":{"amount":0.5,"unitShort":"","unitLong":""},"metric":{"amount":0.5,"unitShort":"","unitLong":""}}},{"id":11156,"aisle":"Produce","image":"fresh-chives.jpg","consistency":"solid","name":"chives","nameClean":"chives","original":"2
-        tablespoons freshly minced chives","originalString":"2 tablespoons freshly
-        minced chives","originalName":"freshly minced chives","amount":2.0,"unit":"tablespoons","meta":["minced"],"metaInformation":["minced"],"measures":{"us":{"amount":2.0,"unitShort":"Tbsps","unitLong":"Tbsps"},"metric":{"amount":2.0,"unitShort":"Tbsps","unitLong":"Tbsps"}}},{"id":1002047,"aisle":"Spices
-        and Seasonings","image":"salt.jpg","consistency":"solid","name":"coarse salt","nameClean":"coarse
-        salt","original":"Coarse salt and ground black pepper","originalString":"Coarse
-        salt and ground black pepper","originalName":"Coarse salt and ground black
-        pepper","amount":4.0,"unit":"servings","meta":["black"],"metaInformation":["black"],"measures":{"us":{"amount":4.0,"unitShort":"servings","unitLong":"servings"},"metric":{"amount":4.0,"unitShort":"servings","unitLong":"servings"}}},{"id":11215,"aisle":"Produce","image":"garlic.png","consistency":"solid","name":"garlic","nameClean":"garlic","original":"1
-        clove garlic, chopped","originalString":"1 clove garlic, chopped","originalName":"garlic,
-        chopped","amount":1.0,"unit":"clove","meta":["chopped"],"metaInformation":["chopped"],"measures":{"us":{"amount":1.0,"unitShort":"clove","unitLong":"clove"},"metric":{"amount":1.0,"unitShort":"clove","unitLong":"clove"}}},{"id":1012064,"aisle":"Produce","image":"lemon-balm.jpg","consistency":"solid","name":"lemon
-        balm","nameClean":"lemon balm","original":"1/2 cup lemon balm","originalString":"1/2
-        cup lemon balm","originalName":"lemon balm","amount":0.5,"unit":"cup","meta":[],"metaInformation":[],"measures":{"us":{"amount":0.5,"unitShort":"cups","unitLong":"cups"},"metric":{"amount":118.294,"unitShort":"ml","unitLong":"milliliters"}}},{"id":9152,"aisle":"Produce","image":"lemon-juice.jpg","consistency":"liquid","name":"lemon
-        juice","nameClean":"lemon juice","original":"1 tablespoon fresh lemon juice","originalString":"1
-        tablespoon fresh lemon juice","originalName":"fresh lemon juice","amount":1.0,"unit":"tablespoon","meta":["fresh"],"metaInformation":["fresh"],"measures":{"us":{"amount":1.0,"unitShort":"Tbsp","unitLong":"Tbsp"},"metric":{"amount":1.0,"unitShort":"Tbsp","unitLong":"Tbsp"}}},{"id":1088,"aisle":"Milk,
-        Eggs, Other Dairy","image":"buttermilk.jpg","consistency":"solid","name":"low
-        fat buttermilk","nameClean":"low fat buttermilk","original":"1/2 cup low-fat
-        buttermilk","originalString":"1/2 cup low-fat buttermilk","originalName":"low-fat
-        buttermilk","amount":0.5,"unit":"cup","meta":["low-fat"],"metaInformation":["low-fat"],"measures":{"us":{"amount":0.5,"unitShort":"cups","unitLong":"cups"},"metric":{"amount":118.294,"unitShort":"ml","unitLong":"milliliters"}}},{"id":93621,"aisle":"Produce;Spices
-        and Seasonings","image":"sorrel.jpg","consistency":"solid","name":"sorrel","nameClean":"sorrel","original":"4
-        packed cups sorrel (4 oz)","originalString":"4 packed cups sorrel (4 oz)","originalName":"packed
-        cups sorrel","amount":4.0,"unit":"oz","meta":["packed"],"metaInformation":["packed"],"measures":{"us":{"amount":4.0,"unitShort":"oz","unitLong":"ounces"},"metric":{"amount":113.398,"unitShort":"g","unitLong":"grams"}}}],"id":123,"title":"Tart
-        Green Salad with Avocado Dressing","readyInMinutes":15,"servings":4,"sourceUrl":"http://www.wholeliving.com/176637/tart-green-salad-avocado-dressing","image":"https://spoonacular.com/recipeImages/123-556x370.jpg","imageType":"jpg","summary":"You
-        can never have too many side dish recipes, so give Tart Green Salad with Avocado
-        Dressing a try. One portion of this dish contains about <b>3g of protein</b>,
-        <b>4g of fat</b>, and a total of <b>71 calories</b>. This recipe serves 4
-        and costs $1.73 per serving. It is a good option if you''re following a <b>gluten
-        free, primal, whole 30, and pescatarian</b> diet. 7 people were impressed
-        by this recipe. Head to the store and pick up coarse salt and ground pepper,
-        avocado, coarse salt and ground pepper, and a few other things to make it
-        today. From preparation to the plate, this recipe takes roughly <b>15 minutes</b>.
-        All things considered, we decided this recipe <b>deserves a spoonacular score
-        of 64%</b>. This score is solid. Try <a href=\"https://spoonacular.com/recipes/grapefruit-avocado-salad-with-pepita-green-goddess-dressing-857435\">grapefruit-avocado
-        salad with pepita green goddess dressing</a>, <a href=\"https://spoonacular.com/recipes/fava-green-+-snap-pea-salad-with-creamy-avocado-dressing-18301\">Fava
-        Green + Snap Pea Salad With Creamy Avocado Dressing</a>, and <a href=\"https://spoonacular.com/recipes/tuna-nicoise-salad-with-avocado-green-goddess-dressing-835966\">Tuna
-        Nicoise Salad with Avocado Green Goddess Dressing</a> for similar recipes.","cuisines":[],"dishTypes":["salad"],"diets":["gluten
-        free","primal","pescatarian"],"occasions":[],"winePairing":{},"instructions":"<ol><li>Combine
-        salad ingredients in a large bowl and season with salt and pepper.</li><li>Place
-        dressing ingredients and 1/4 cup water in a blender and puree until smooth.
-        Season with salt and pepper. (If thick, add water by the tablespoon.)</li><li>Drizzle
-        salad with 1/3 cup dressing.</li></ol>","analyzedInstructions":[{"name":"","steps":[{"number":1,"step":"Combine
-        salad ingredients in a large bowl and season with salt and pepper.","ingredients":[{"id":1102047,"name":"salt
-        and pepper","localizedName":"salt and pepper","image":"salt-and-pepper.jpg"}],"equipment":[{"id":404783,"name":"bowl","localizedName":"bowl","image":"bowl.jpg"}]},{"number":2,"step":"Place
-        dressing ingredients and 1/4 cup water in a blender and puree until smooth.
-        Season with salt and pepper. (If thick, add water by the tablespoon.)","ingredients":[{"id":1102047,"name":"salt
-        and pepper","localizedName":"salt and pepper","image":"salt-and-pepper.jpg"},{"id":14412,"name":"water","localizedName":"water","image":"water.png"}],"equipment":[{"id":404726,"name":"blender","localizedName":"blender","image":"blender.png"}]},{"number":3,"step":"Drizzle
-        salad with 1/3 cup dressing.","ingredients":[],"equipment":[]}]}],"sourceName":null,"creditsText":null,"originalId":null}'
-  recorded_at: Thu, 22 Apr 2021 00:43:08 GMT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiMTIzIiwidHlwZSI6InJlY2lwZV9wb3JvIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiVGFydCBHcmVlbiBTYWxhZCB3aXRoIEF2b2NhZG8gRHJlc3NpbmciLCJpbWFnZSI6Imh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZUltYWdlcy8xMjMtNTU2eDM3MC5qcGciLCJyZWNpcGVfaW5mbyI6IllvdSBjYW4gbmV2ZXIgaGF2ZSB0b28gbWFueSBzaWRlIGRpc2ggcmVjaXBlcywgc28gZ2l2ZSBUYXJ0IEdyZWVuIFNhbGFkIHdpdGggQXZvY2FkbyBEcmVzc2luZyBhIHRyeS4gT25lIHBvcnRpb24gb2YgdGhpcyBkaXNoIGNvbnRhaW5zIGFib3V0IFx1MDAzY2JcdTAwM2UzZyBvZiBwcm90ZWluXHUwMDNjL2JcdTAwM2UsIFx1MDAzY2JcdTAwM2U0ZyBvZiBmYXRcdTAwM2MvYlx1MDAzZSwgYW5kIGEgdG90YWwgb2YgXHUwMDNjYlx1MDAzZTcxIGNhbG9yaWVzXHUwMDNjL2JcdTAwM2UuIFRoaXMgcmVjaXBlIHNlcnZlcyA0IGFuZCBjb3N0cyAkMS43MyBwZXIgc2VydmluZy4gSXQgaXMgYSBnb29kIG9wdGlvbiBpZiB5b3UncmUgZm9sbG93aW5nIGEgXHUwMDNjYlx1MDAzZWdsdXRlbiBmcmVlLCBwcmltYWwsIHdob2xlIDMwLCBhbmQgcGVzY2F0YXJpYW5cdTAwM2MvYlx1MDAzZSBkaWV0LiA3IHBlb3BsZSB3ZXJlIGltcHJlc3NlZCBieSB0aGlzIHJlY2lwZS4gSGVhZCB0byB0aGUgc3RvcmUgYW5kIHBpY2sgdXAgY29hcnNlIHNhbHQgYW5kIGdyb3VuZCBwZXBwZXIsIGF2b2NhZG8sIGNvYXJzZSBzYWx0IGFuZCBncm91bmQgcGVwcGVyLCBhbmQgYSBmZXcgb3RoZXIgdGhpbmdzIHRvIG1ha2UgaXQgdG9kYXkuIEZyb20gcHJlcGFyYXRpb24gdG8gdGhlIHBsYXRlLCB0aGlzIHJlY2lwZSB0YWtlcyByb3VnaGx5IFx1MDAzY2JcdTAwM2UxNSBtaW51dGVzXHUwMDNjL2JcdTAwM2UuIEFsbCB0aGluZ3MgY29uc2lkZXJlZCwgd2UgZGVjaWRlZCB0aGlzIHJlY2lwZSBcdTAwM2NiXHUwMDNlZGVzZXJ2ZXMgYSBzcG9vbmFjdWxhciBzY29yZSBvZiA2NCVcdTAwM2MvYlx1MDAzZS4gVGhpcyBzY29yZSBpcyBzb2xpZC4gVHJ5IFx1MDAzY2EgaHJlZj1cImh0dHBzOi8vc3Bvb25hY3VsYXIuY29tL3JlY2lwZXMvZ3JhcGVmcnVpdC1hdm9jYWRvLXNhbGFkLXdpdGgtcGVwaXRhLWdyZWVuLWdvZGRlc3MtZHJlc3NpbmctODU3NDM1XCJcdTAwM2VncmFwZWZydWl0LWF2b2NhZG8gc2FsYWQgd2l0aCBwZXBpdGEgZ3JlZW4gZ29kZGVzcyBkcmVzc2luZ1x1MDAzYy9hXHUwMDNlLCBcdTAwM2NhIGhyZWY9XCJodHRwczovL3Nwb29uYWN1bGFyLmNvbS9yZWNpcGVzL2ZhdmEtZ3JlZW4tKy1zbmFwLXBlYS1zYWxhZC13aXRoLWNyZWFteS1hdm9jYWRvLWRyZXNzaW5nLTE4MzAxXCJcdTAwM2VGYXZhIEdyZWVuICsgU25hcCBQZWEgU2FsYWQgV2l0aCBDcmVhbXkgQXZvY2FkbyBEcmVzc2luZ1x1MDAzYy9hXHUwMDNlLCBhbmQgXHUwMDNjYSBocmVmPVwiaHR0cHM6Ly9zcG9vbmFjdWxhci5jb20vcmVjaXBlcy90dW5hLW5pY29pc2Utc2FsYWQtd2l0aC1hdm9jYWRvLWdyZWVuLWdvZGRlc3MtZHJlc3NpbmctODM1OTY2XCJcdTAwM2VUdW5hIE5pY29pc2UgU2FsYWQgd2l0aCBBdm9jYWRvIEdyZWVuIEdvZGRlc3MgRHJlc3NpbmdcdTAwM2MvYVx1MDAzZSBmb3Igc2ltaWxhciByZWNpcGVzLiIsImluZ3JlZGllbnRzIjpbeyJuYW1lIjoiYW5jaG92aWVzIiwiYW1vdW50IjoiMS4wICJ9LHsibmFtZSI6Imhhc3MgYXZvY2FkbyIsImFtb3VudCI6IjAuNSAifSx7Im5hbWUiOiJjaGl2ZXMiLCJhbW91bnQiOiIyLjAgdGFibGVzcG9vbnMifSx7Im5hbWUiOiJjb2Fyc2Ugc2FsdCIsImFtb3VudCI6IjQuMCBzZXJ2aW5ncyJ9LHsibmFtZSI6ImdhcmxpYyIsImFtb3VudCI6IjEuMCBjbG92ZSJ9LHsibmFtZSI6ImxlbW9uIGJhbG0iLCJhbW91bnQiOiIwLjUgY3VwIn0seyJuYW1lIjoibGVtb24ganVpY2UiLCJhbW91bnQiOiIxLjAgdGFibGVzcG9vbiJ9LHsibmFtZSI6ImxvdyBmYXQgYnV0dGVybWlsayIsImFtb3VudCI6IjAuNSBjdXAifSx7Im5hbWUiOiJzb3JyZWwiLCJhbW91bnQiOiI0LjAgb3oifV0sImluc3RydWN0aW9ucyI6W3sic3RlcCI6MSwiaW5zdHJ1Y3Rpb24iOiJDb21iaW5lIHNhbGFkIGluZ3JlZGllbnRzIGluIGEgbGFyZ2UgYm93bCBhbmQgc2Vhc29uIHdpdGggc2FsdCBhbmQgcGVwcGVyLiJ9LHsic3RlcCI6MiwiaW5zdHJ1Y3Rpb24iOiJQbGFjZSBkcmVzc2luZyBpbmdyZWRpZW50cyBhbmQgMS80IGN1cCB3YXRlciBpbiBhIGJsZW5kZXIgYW5kIHB1cmVlIHVudGlsIHNtb290aC4gU2Vhc29uIHdpdGggc2FsdCBhbmQgcGVwcGVyLiAoSWYgdGhpY2ssIGFkZCB3YXRlciBieSB0aGUgdGFibGVzcG9vbi4pIn0seyJzdGVwIjozLCJpbnN0cnVjdGlvbiI6IkRyaXp6bGUgc2FsYWQgd2l0aCAxLzMgY3VwIGRyZXNzaW5nLiJ9XSwibnV0cmllbnRzIjpbeyJuYW1lIjoiQ2Fsb3JpZXMiLCJhbW91bnQiOiI2Ni42NCBrY2FsIn0seyJuYW1lIjoiRmF0IiwiYW1vdW50IjoiNC4yNyBnIn0seyJuYW1lIjoiU2F0dXJhdGVkIEZhdCIsImFtb3VudCI6IjAuNzMgZyJ9LHsibmFtZSI6IkNhcmJvaHlkcmF0ZXMiLCJhbW91bnQiOiI1LjY3IGcifSx7Im5hbWUiOiJOZXQgQ2FyYm9oeWRyYXRlcyIsImFtb3VudCI6IjMuMjUgZyJ9LHsibmFtZSI6IlN1Z2FyIiwiYW1vdW50IjoiMS43MyBnIn0seyJuYW1lIjoiQ2hvbGVzdGVyb2wiLCJhbW91bnQiOiIxLjggbWcifSx7Im5hbWUiOiJTb2RpdW0iLCJhbW91bnQiOiIyMzEuMTggbWcifSx7Im5hbWUiOiJQcm90ZWluIiwiYW1vdW50IjoiMi41OSBnIn0seyJuYW1lIjoiVml0YW1pbiBDIiwiYW1vdW50IjoiMjAuNzcgbWcifSx7Im5hbWUiOiJWaXRhbWluIEEiLCJhbW91bnQiOiIxMDM2LjIxIElVIn0seyJuYW1lIjoiRm9sYXRlIiwiYW1vdW50IjoiNzMuMjMgwrVnIn0seyJuYW1lIjoiTWFnbmVzaXVtIiwiYW1vdW50IjoiNDUuNzQgbWcifSx7Im5hbWUiOiJGaWJlciIsImFtb3VudCI6IjIuNDIgZyJ9LHsibmFtZSI6IlZpdGFtaW4gSyIsImFtb3VudCI6IjguNTEgwrVnIn0seyJuYW1lIjoiSXJvbiIsImFtb3VudCI6IjEuMTkgbWcifSx7Im5hbWUiOiJQb3Rhc3NpdW0iLCJhbW91bnQiOiIyMTQuMzQgbWcifSx7Im5hbWUiOiJNYW5nYW5lc2UiLCJhbW91bnQiOiIwLjEyIG1nIn0seyJuYW1lIjoiVml0YW1pbiBCMiIsImFtb3VudCI6IjAuMSBtZyJ9LHsibmFtZSI6IkNhbGNpdW0iLCJhbW91bnQiOiI1Ni4wNCBtZyJ9LHsibmFtZSI6IlZpdGFtaW4gQjYiLCJhbW91bnQiOiIwLjEgbWcifSx7Im5hbWUiOiJQaG9zcGhvcnVzIiwiYW1vdW50IjoiNDcuOTMgbWcifSx7Im5hbWUiOiJWaXRhbWluIEI1IiwiYW1vdW50IjoiMC40NyBtZyJ9LHsibmFtZSI6IkNvcHBlciIsImFtb3VudCI6IjAuMDggbWcifSx7Im5hbWUiOiJWaXRhbWluIEUiLCJhbW91bnQiOiIwLjU1IG1nIn0seyJuYW1lIjoiVml0YW1pbiBCMyIsImFtb3VudCI6IjAuNzEgbWcifSx7Im5hbWUiOiJaaW5jIiwiYW1vdW50IjoiMC4zOSBtZyJ9LHsibmFtZSI6IlZpdGFtaW4gQjEiLCJhbW91bnQiOiIwLjA0IG1nIn0seyJuYW1lIjoiU2VsZW5pdW0iLCJhbW91bnQiOiIxLjE5IMK1ZyJ9LHsibmFtZSI6IlZpdGFtaW4gQjEyIiwiYW1vdW50IjoiMC4wNyDCtWcifV19fX0=
+  recorded_at: Thu, 22 Apr 2021 20:00:52 GMT
 recorded_with: VCR 6.0.0

@@ -39,7 +39,7 @@ RSpec.describe "Recipe Search Page" do
       describe "sad path and error" do
         it "500 error" do
           ingredient = "chicken"
-          stub_request(:get, "https://api.spoonacular.com/recipes/complexSearch?apiKey=296c69ea4ec3407d848370782126a86d&includeIngredients=#{ingredient}").
+          stub_request(:get, "https://nameless-plains-48795.herokuapp.com/api/v1/recipes/ingredients=#{ingredient}").
             to_return(status: 500, body: "", headers: {})
 
           data = BackendService.recipe_search_data(ingredient)

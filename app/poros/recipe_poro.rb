@@ -1,19 +1,19 @@
 class RecipePoro
   attr_reader :id,
               :title,
-              :summary,
+              :info,
               :instructions,
               :ingredients,
-              :nutrients
+              :nutrients,
+              :image
 
   def initialize(data)
-    @id = data[:id]
-    @title = data[:title]
-    @summary = data[:summary]
-    @instructions = data[:instructions]
-    @ingredients = data[:extendedIngredients].map do |ingredient|
-                    ingredient[:name]
-                  end
-    @nutrients ="stuff and things"
+    @id = data[:data][:id]
+    @title = data[:data][:attributes][:name]
+    @info = data[:data][:attributes][:recipe_info]
+    @instructions = data[:data][:attributes][:instructions]
+    @ingredients = data[:data][:attributes][:ingredients]
+    @nutrients = data[:data][:attributes][:nutrients]
+    @image = data[:data][:attributes][:image]
   end
 end
