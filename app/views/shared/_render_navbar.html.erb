@@ -1,13 +1,21 @@
-<ul id="navbar">
-  <% unless @skip_dashboard %>
-    <%= render partial: "/shared/render_dashboard" %>
-  <% end %>
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <% unless @skip_dashboard %>
+      <%= render partial: "/shared/render_dashboard" %>
+    <% end %>
+  </li>
+  <li class="nav-item">
+    <% unless @skip_shopping_list  %>
+      <%= render partial: "/shared/render_shopping_list" %>
+    <% end %>
+  </li>
+  <li class="nav-item">
+    <% unless @skip_search_recipes %>
+      <%= render partial: "/shared/render_search_recipes" %>
+    <% end %>
+  </li>
+</ul>
 
-  <% unless @skip_shopping_list  %>
-    <%= render partial: "/shared/render_shopping_list" %>
-  <% end %>
-
-  <% unless @skip_search_recipes %>
-    <%= render partial: "/shared/render_search_recipes" %>
-  <% end %>
-<li> <%=link_to 'Log Out',logout_path, method: :delete, value: "logout" %></li>
+<ul id="nav-item">
+   <%=link_to 'Log Out',logout_path, class: "btn btn-outline-primary", method: :delete, value: "logout" %>
+</ul>
