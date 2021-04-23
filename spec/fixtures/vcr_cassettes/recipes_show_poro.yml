@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nameless-plains-48795.herokuapp.com/api/v1/recipes?ingredient=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 23 Apr 2021 02:05:05 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b377bf387a82da814932374ea29fa129"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b13a0ca1-3c93-44e8-92a7-6fa938fe34df
+      X-Runtime:
+      - '2.097146'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"716268","type":"result","attributes":{"title":"African
+        Chicken Peanut Stew","image":"https://spoonacular.com/recipeImages/716268-312x231.jpg","cuisine":"African","calories":1204.74,"id":716268}},{"id":"635675","type":"result","attributes":{"title":"Boozy
+        Bbq Chicken","image":"https://spoonacular.com/recipeImages/635675-312x231.jpg","cuisine":null,"calories":723.74,"id":635675}},{"id":"633624","type":"result","attributes":{"title":"Baked
+        Fried Chicken With Cauliflower Mash","image":"https://spoonacular.com/recipeImages/633624-312x231.jpg","cuisine":"Southern","calories":660.56,"id":633624}},{"id":"665261","type":"result","attributes":{"title":"Whole
+        Chicken Dinner","image":"https://spoonacular.com/recipeImages/665261-312x231.jpg","cuisine":null,"calories":1105.41,"id":665261}},{"id":"716427","type":"result","attributes":{"title":"Roasted
+        Butterflied Chicken w. Onions \u0026 Carrots","image":"https://spoonacular.com/recipeImages/716427-312x231.jpg","cuisine":null,"calories":674.98,"id":716427}},{"id":"633524","type":"result","attributes":{"title":"Baked
+        Chicken In Roasting Bag","image":"https://spoonacular.com/recipeImages/633524-312x231.jpg","cuisine":null,"calories":489.46,"id":633524}},{"id":"641072","type":"result","attributes":{"title":"Curried
+        Chickpeas and Vegetables","image":"https://spoonacular.com/recipeImages/641072-312x231.jpg","cuisine":null,"calories":341.08,"id":641072}},{"id":"649430","type":"result","attributes":{"title":"Leek
+        and Chicken Soup","image":"https://spoonacular.com/recipeImages/649430-312x231.jpg","cuisine":null,"calories":595.35,"id":649430}},{"id":"634618","type":"result","attributes":{"title":"Beef
+        Green Chile Stew","image":"https://spoonacular.com/recipeImages/634618-312x231.jpg","cuisine":null,"calories":377.69,"id":634618}},{"id":"663971","type":"result","attributes":{"title":"Turbo
+        Chicken","image":"https://spoonacular.com/recipeImages/663971-312x231.jpg","cuisine":null,"calories":729.9,"id":663971}},{"id":"634753","type":"result","attributes":{"title":"Beer
+        Can Chicken, Country Style Vegetables with Roasted Garlic","image":"https://spoonacular.com/recipeImages/634753-312x231.jpg","cuisine":null,"calories":821.35,"id":634753}},{"id":"639616","type":"result","attributes":{"title":"Classic
+        Matzo Ball Soup","image":"https://spoonacular.com/recipeImages/639616-312x231.jpg","cuisine":null,"calories":634.92,"id":639616}},{"id":"716342","type":"result","attributes":{"title":"Chicken
+        Suya","image":"https://spoonacular.com/recipeImages/716342-312x231.jpg","cuisine":null,"calories":523.01,"id":716342}},{"id":"657579","type":"result","attributes":{"title":"Quick
+        Chicken Enchilada Soup","image":"https://spoonacular.com/recipeImages/657579-312x231.jpg","cuisine":"Mexican","calories":485.6,"id":657579}},{"id":"660220","type":"result","attributes":{"title":"Skillet
+        Roasted Chicken \u0026 Potatoes","image":"https://spoonacular.com/recipeImages/660220-312x231.jpg","cuisine":null,"calories":738.08,"id":660220}},{"id":"660286","type":"result","attributes":{"title":"Slow
+        Cooker Chicken Verde Enchilada","image":"https://spoonacular.com/recipeImages/660286-312x231.jpg","cuisine":"Mexican","calories":842.81,"id":660286}},{"id":"649985","type":"result","attributes":{"title":"Light
+        and Chunky Chicken Soup","image":"https://spoonacular.com/recipeImages/649985-312x231.jpg","cuisine":null,"calories":430.08,"id":649985}},{"id":"157375","type":"result","attributes":{"title":"Steamy
+        Creamy Mushroom Risotto","image":"https://spoonacular.com/recipeImages/157375-312x231.jpg","cuisine":"Mediterranean","calories":959.68,"id":157375}},{"id":"660133","type":"result","attributes":{"title":"Simple
+        Roast Chicken","image":"https://spoonacular.com/recipeImages/660133-312x231.jpg","cuisine":null,"calories":681.39,"id":660133}},{"id":"654184","type":"result","attributes":{"title":"Oven
+        Braised Lemon Chicken","image":"https://spoonacular.com/recipeImages/654184-312x231.jpg","cuisine":null,"calories":206.1,"id":654184}}]}'
+  recorded_at: Fri, 23 Apr 2021 02:05:06 GMT
+recorded_with: VCR 6.0.0
