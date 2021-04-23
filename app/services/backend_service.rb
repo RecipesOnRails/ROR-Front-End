@@ -12,7 +12,7 @@ class BackendService
 
   def self.recipe_search_data(ingredient)
     #conn.get("/recipes?#{ingredient}")
-    response = conn.get("/api/v1/recipes/ingredients=#{ingredient}")
+    response = conn.get("/api/v1/recipes?ingredient=#{ingredient}")
     if response.status == 200
       json_parse(response)
     else

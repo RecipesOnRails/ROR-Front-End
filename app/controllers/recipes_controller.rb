@@ -5,6 +5,6 @@ class RecipesController < ApplicationController
 
   def index
     @skip_search_recipes = true
-    @recipes = BackendServiceFacade.get_recipes_search(params[:ingredient1])
+    @recipes = BackendServiceFacade.get_recipes_search(params["ingredient"])
   end
 end

@@ -1,11 +1,15 @@
 class ResultsPoro
   attr_reader :id,
               :title,
-              :image
+              :image,
+              :cuisine,
+              :calories
 
   def initialize(data)
     @id = data[:id]
-    @title = data[:title]
-    @image = data[:image]
+    @title = data[:attributes][:title]
+    @image = data[:attributes][:image]
+    @cuisine = data[:attributes][:cuisine]
+    @calories = data[:attributes][:calories]
   end
 end
