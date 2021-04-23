@@ -5,6 +5,11 @@ Our challenge was to create a student-led web application from idea to inception
 
 The front end portion of the Recipes On Rails application. The HTML, CSS, and JavaScript(front_end) lives on this repository and allows users to interact with the backend and microservice portions of the application. A user can make a meal plan and find recipes with the same ingredients with the ability to share them with their friends and family.
 
+You can find our other repositories here:
+- [Backend](https://github.com/RecipesOnRails/ROR-Backend)
+- [Spoonacular Microservice](https://github.com/RecipesOnRails/ROR_recipe_microservice)
+- [Kroger Microservice](https://github.com/RecipesOnRails/ROR_shopping_microservice)
+
 ## Getting Started
 
 ### Prerequisites
@@ -51,7 +56,7 @@ https://secure-gorge-18886.herokuapp.com/ is where it lives on production level.
 * [Ruby on Rails](https://guides.rubyonrails.org/v5.2/) -  Web Framework Used
 * [TravisCI](https://docs.travis-ci.com/) - Continuous Integration Service Used
 * [Heroku](https://devcenter.heroku.com/categories/reference) - Cloud Platform Service Used
-* 
+
 ## Contributing
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
