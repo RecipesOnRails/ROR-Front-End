@@ -5,11 +5,6 @@
     <% end %>
   </li>
   <li class="nav-item">
-    <% unless @skip_shopping_list  %>
-      <%= render partial: "/shared/render_shopping_list" %>
-    <% end %>
-  </li>
-  <li class="nav-item">
     <% unless @skip_search_recipes %>
       <%= render partial: "/shared/render_search_recipes" %>
     <% end %>
