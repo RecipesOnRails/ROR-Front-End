@@ -3,7 +3,7 @@ This project serves as the group Consultancy Project for Module 3 of Turing Scho
 
 Our challenge was to create a student-led web application from idea to inception. Project requirements included: authentication with a third-party service, consuming an API, and solving a real-world problem.
 
-The front end portion of the Recipes On Rails application. The HTML, CSS, and JavaScript(front_end) lives on this repository and allows users to interact with the backend and microservice portions of the application. A user can make a meal plan and find recipes with the same ingredients with the ability to share them with their friends and family.
+This repo holds the front end portion of the Recipes On Rails application. The HTML, CSS, and JavaScript(front_end) lives on this repository and allows users to interact with the backend and microservice portions of the application. A user can make a meal plan and find recipes with the same ingredients with the ability to share them with their friends and family.
 
 You can find our other repositories here:
 - [Backend](https://github.com/RecipesOnRails/ROR-Backend)
