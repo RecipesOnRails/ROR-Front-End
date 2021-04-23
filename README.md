@@ -80,5 +80,3 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
   [LinkedIn](https://www.linkedin.com/in/jeremiah-michlitsch-49048a206/)
   
 See also the list of [contributors](https://github.com/RecipesOnRails/ROR-Front-End/graphs/contributors)
-## License
-## Acknowledgments
