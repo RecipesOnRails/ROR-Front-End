@@ -27,7 +27,7 @@ RSpec.describe "Recipe Search Page" do
           end
         end
 
-        xit 'Displays login content' do
+        it 'Displays login content' do
           recipe_id = 123
           VCR.use_cassette("recipe_show_feature") do
             visit "/recipes/#{recipe_id}"
@@ -54,13 +54,6 @@ RSpec.describe "Recipe Search Page" do
             expect(page).to have_content("low fat buttermilk")
             expect(page).to have_content("sorrel")
 
-            #Nutrients
-            expect(page).to have_content("Calories 66.64 kcal")
-            expect(page).to have_content("Fat 4.27 g")
-            expect(page).to have_content("Saturated Fat 0.73 g")
-            expect(page).to have_content("Carbohydrates 3.25 g")
-            expect(page).to have_content("Sugar 1.73 g")
-            expect(page).to have_content("Cholesterol 1.8 mg")
           end
         end
       end

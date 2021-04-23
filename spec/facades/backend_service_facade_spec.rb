@@ -18,7 +18,6 @@ RSpec.describe "BackendServiceFacade" do
         expect(a.ingredients).to be_an(Array)
         expect(a.instructions).to be_an(Array)
         expect(a.nutrients).to be_an(Array)
-        expect(a.summary).to be_an(String)
         expect(a.title).to be_an(String)
       end
     end

@@ -7,11 +7,10 @@ RSpec.describe "RecipePoro" do
         data = BackendService.recipe_data(123)
 
         recipe_poro = RecipePoro.new(data)
-
-        expect(recipe_poro.title).to eq(data[:title])
-        expect(recipe_poro.id).to eq(data[:id])
-        expect(recipe_poro.summary).to eq(data[:summary])
-        expect(recipe_poro.instructions).to eq(data[:instructions])
+        expect(recipe_poro.title).to eq(data[:data][:attributes][:name])
+        expect(recipe_poro.id).to eq(data[:data][:id])
+        expect(recipe_poro.info).to eq(data[:data][:attributes][:recipe_info])
+        expect(recipe_poro.instructions).to eq(data[:data][:attributes][:instructions])
         expect(recipe_poro.ingredients).to be_an(Array)
       end
     end

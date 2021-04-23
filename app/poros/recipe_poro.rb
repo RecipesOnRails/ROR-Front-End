@@ -1,4 +1,4 @@
-class RecipePoro
+class RecipePoro 
   attr_reader :id,
               :title,
               :info,

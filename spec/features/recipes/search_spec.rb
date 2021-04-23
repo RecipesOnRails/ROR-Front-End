@@ -20,18 +20,18 @@ RSpec.describe "Recipe Search Page" do
       end
 
       describe 'when I visit the recipes search page' do
-        xit 'expects page to visit recipes path' do
+        it 'expects page to visit recipes path' do
           VCR.use_cassette('recipes_default') do
             visit '/recipes'
             expect(current_path).to eq(recipes_path)
           end
         end
 
-        xit "has a search bar with a submit button" do
+        it "has a search bar with a submit button" do
           VCR.use_cassette('recipes_default') do
             visit '/recipes'
-            expect(page).to have_field(:search)
-            expect(page).to have_button(:submit)
+            expect(page).to have_field(:ingredient)
+            expect(page).to have_button("Search by Ingredient")
           end
         end
       end
