@@ -14,7 +14,7 @@
             <img src="<%= recipe.image %>"height="125px" width="140px" style="margin:10px>"<br><br>
             <%= recipe.title %><br>
             <p class="card-text">Calories <%= recipe.calories %></p>
-            <a href="/mealplans?recipe=<%=recipe.id %>" data-method="post" class="btn btn-primary">Add to Mealplan</a>
+            <%= link_to "Add to Meal Plan", mealplans_path, {method: :post, params: {api_id: recipe.id, title: recipe.title, meal_plan_id: session[:meal_plan]}} %>
             <p class="card-text"><small class="text-muted"><%= recipe.cuisine %></small></p>
           </div>
         </div>
