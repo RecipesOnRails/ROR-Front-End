@@ -7,24 +7,24 @@
   <%= f.submit "Email Meal Plan" %>
 <% end %>
 </div>
-
+ 
 <div class="container-right">
 <%= button_to "Past Recipes", recipes_past_path, method: :get %>
 </div>
 
 <div class="meal-plan-week">
-  <% (Date.today.beginning_of_week...Date.today.beginning_of_week+7).to_a.each do |day| %>
-  <p>
+  <p> <%= @meal_plan[:data][:attributes][:start_date].to_date %> </p>
+  <p> <%= @meal_plan[:data][:attributes][:end_date].to_date %> </p>
+  <% @meal_plan[:data][:attributes][:recipes].each do |recipe|  %>
   <div class="card">
+    <%= recipe[:title] %>
     <div class="card-body">
+      <% end  %>
       <div class="card-title name">
-      <%= day.strftime("%A") %>
         <section class="day-#{day}">
           <%= button_to "Add Meal", recipes_path, method: :get %>
         </section>
       </div>
     </div>
   </div>
-    </p>
-  <% end %>
 </div>
