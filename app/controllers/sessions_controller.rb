@@ -1,6 +1,8 @@
 require 'base64'
 
 class SessionsController < ApplicationController
+  skip_before_action :require_login
+  
   def create
     data = SessionService.access_token(params[:code])
     user          = User.find_or_create_by(uid: data[1][:data][:id])
