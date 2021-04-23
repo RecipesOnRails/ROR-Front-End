@@ -1,3 +1,8 @@
+<%= form_with url: recipes_path, method: :get, local: true do |f| %>
+  <%= f.text_field :ingredient %>
+  <%= f.submit "Search by Ingredient" %>
+<% end %>
+
 <% if @recipes %>
   <% if @recipes == {error: true} %>
     Sorry, there was a server error while processing your request!
@@ -6,8 +11,11 @@
       <div class="card">
         <div class="card-body">
           <div class="card-title name">
-            <img src="<%= recipe[:image] %>"height="125px" width="140px" style="margin:10px>"<br><br>
-            <%= recipe[:title] %><br>
+            <img src="<%= recipe.image %>"height="125px" width="140px" style="margin:10px>"<br><br>
+            <%= recipe.title %><br>
+            <p class="card-text">Calories <%= recipe.calories %></p>
+            <a href="/mealplans?recipe=<%=recipe.id %>" data-method="post" class="btn btn-primary">Add to Mealplan</a>
+            <p class="card-text"><small class="text-muted"><%= recipe.cuisine %></small></p>
           </div>
         </div>
       </div>

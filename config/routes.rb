@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get '/recipes/:id', to: 'recipes#show'
   get '/recipes', to: 'recipes#index'
   get '/recipes/past', to: 'recipes#past'
+
+  post '/mealplans', to: 'mealplans#create'
 end
